@@ -46,7 +46,7 @@
 // Start with this value and watch the Serial Monitor to calibrate:
 // note the "untouched" baseline and the "touched" value it drops to,
 // then set the threshold roughly halfway between the two.
-#define TOUCH_THRESHOLD 200000
+#define TOUCH_THRESHOLD 70000
 
 // ---------------------------------------------------------------
 // Simple band-limited-ish sawtooth generator (naive, no anti-aliasing).
