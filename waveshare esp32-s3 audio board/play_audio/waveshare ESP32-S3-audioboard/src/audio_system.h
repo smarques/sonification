@@ -23,17 +23,17 @@
 class SawtoothGenerator : public SoundGenerator<int16_t>
 {
 public:
-  SawtoothGenerator(float frequency = 220.0f, float amplitude = 0.3f);
+    SawtoothGenerator(float frequency = 220.0f, float amplitude = 0.3f);
 
-  void begin(AudioInfo info, float frequency);
-  int16_t readSample() override;
+    void begin(AudioInfo info, float frequency);
+    int16_t readSample() override;
 
-  bool active = false;
+    bool active = false;
 
 private:
-  float frequency;
-  float amplitude;
-  float phase = 0.0f;
+    float frequency;
+    float amplitude;
+    float phase = 0.0f;
 };
 
 void audioSystemInit();
